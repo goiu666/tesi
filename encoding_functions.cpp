@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+
 #include <map> // per l'hash table tra caratteri e code points
 
 
@@ -18,7 +17,7 @@
     *vettore contenente i blocchi code points rappresentanti le lettere cifrate
 
     PRESUPPOSTI:
-    *la dimensione dei code points è adatta a suddividere il messaggio in un numero di bloccchi
+    *la dimensione dei code points Ã¨ adatta a suddividere il messaggio in un numero di bloccchi
      tali che ciascuno ha lo stesso numero di caratteri                                                               */
 int* rsa_encode(const char mex[],size_t dim,unsigned long long p,unsigned long long q,unsigned long a, std::map<char,int> alphabet, int CP_dim)
 {
@@ -42,7 +41,6 @@ int* rsa_encode(const char mex[],size_t dim,unsigned long long p,unsigned long l
 int main()
 {
     int* prova=rsa_encode("prova",5,11,13,17,std::map<char,int>{{'p',1},{'r',2},{'o',3},{'v',4},{'a',5}},1);
-    for(int i{};i<5;++i)
-        std::cout<<prova[i]<<'\n';
+
     return 0;
 }
