@@ -44,6 +44,6 @@ int* rsa_encode(const char mex[],int dim,unsigned long long p,unsigned long long
 int main()
 {
     int* prova=rsa_encode("prova",5,11,13,17,std::map<char,int>{{'p',1},{'r',2},{'o',3},{'v',4},{'a',5}},1);
-
+    delete[] prova;
     return 0;
 }
