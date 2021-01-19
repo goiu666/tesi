@@ -19,13 +19,14 @@
     PRESUPPOSTI:
     *la dimensione dei code points è adatta a suddividere il messaggio in un numero di bloccchi
      tali che ciascuno ha lo stesso numero di caratteri                                                               */
-int* rsa_encode(const char mex[],size_t dim,unsigned long long p,unsigned long long q,unsigned long a, std::map<char,int> alphabet, int CP_dim)
+int* rsa_encode(const char mex[],int dim,unsigned long long p,unsigned long long q,unsigned long a, std::map<char,int> alphabet, int CP_dim)
 {
     //1. associo ad ogni lettera il code point corrispondente
     int* arr{new int[5]};
     //arr=mex_to_alphabet(mex,alphabet);
-
+    
     //2. suddivido la lista di code points in blocchi
+    int n_of_blocks{dim/CP_dim};
     int* blocks{new int[n_of_blocks]};
     //blocks=divide(arr,n_of_blocks);
 
@@ -35,6 +36,8 @@ int* rsa_encode(const char mex[],size_t dim,unsigned long long p,unsigned long l
 
     //return blocks
     return new int[5]{};
+    
+    //nota: nessuna deallocazione poiché ogni memoria allocata verrà restituita come output
 }
 
 
