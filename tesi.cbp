@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="encoding" />
+		<Option title="tesi" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/encoding" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/tesi" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/encoding" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/tesi" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="funzioni_di_codifica.cpp" />
+		<Unit filename="funzioni_di_codifica.h" />
+		<Unit filename="funzioni_di_decodifica.cpp" />
+		<Unit filename="funzioni_di_decodifica.h" />
+		<Unit filename="funzioni_di_utilita.cpp" />
+		<Unit filename="funzioni_di_utilita.h" />
+		<Unit filename="generazione_chiavi.cpp" />
+		<Unit filename="generazione_chiavi.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

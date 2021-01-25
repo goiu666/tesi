@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1611577218 source:c:\codeblocks\tesi\funzioni_di_utilita.cpp
+	"funzioni_di_utilita.h"
+	<algorithm>
+	<cmath>
+	<cstdlib>
+	<utility>
+
+1611577177 c:\codeblocks\tesi\funzioni_di_utilita.h
+	<cmath>
+	<cstdlib>
+	<limits>
+	<utility>
+
+1611570938 source:c:\codeblocks\tesi\generazione_chiavi.cpp
+	"funzioni_di_utilita.h"
+	"generazione_chiavi.h"
+	<ctime>
+	<cstdlib>
+	<limits>
+	<utility>
+	<iostream>
+
+1611577623 c:\codeblocks\tesi\generazione_chiavi.h
+	"funzioni_di_utilita.h"
+	<utility>
+	<iostream>
+
+1611577251 source:c:\codeblocks\tesi\funzioni_di_codifica.cpp
+	"funzioni_di_codifica.h"
+	"funzioni_di_utilita.h"
+	<cstddef>
+	<unordered_map>
+
+1611568887 c:\codeblocks\tesi\funzioni_di_codifica.h
+	"funzioni_di_utilita.h"
+	"generazione_chiavi.h"
+	<cstddef>
+	<unordered_map>
+	<utility>
+
+1611570660 source:c:\codeblocks\tesi\funzioni_di_decodifica.cpp
+	"funzioni_di_decodifica.h"
+	<cstddef>
+
+1611570626 c:\codeblocks\tesi\funzioni_di_decodifica.h
+	"generazione_chiavi.h"
+	<cstddef>
+	<unordered_map>
+
+1611578140 source:c:\codeblocks\tesi\main.cpp
+	"funzioni_di_codifica.h"
+	"funzioni_di_decodifica.h"
+	"funzioni_di_utilita.h"
+	"generazione_chiavi.h"
+	<iostream>
+	<limits>
+	<memory>
+	<string>
+	<unordered_map>
+
