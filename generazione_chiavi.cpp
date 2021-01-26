@@ -41,7 +41,11 @@ bool Key::genera_chiave()
 
     n = p*q;
 
-    return (((a*x)<x)||((a*x)<a)||((a*x)%phi_n)!=1);
+    // controlli per overflow
+    return (((a*x)<x)||
+            ((a*x)<a)||
+            (((a*x)%phi_n)!=1)||
+            (modular_pow(10,a*x,n)!=10));
 }
 
 std::pair<num_type, num_type> Key::get_public_key() const
