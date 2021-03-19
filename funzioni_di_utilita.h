@@ -38,6 +38,6 @@ num_type gen_random_number(num_type min, num_type max);
 num_type gen_random_prime(num_type min,num_type max);
 
 // genera una coppia di numeri primi casuali tra loro diversi
-std::pair<num_type,num_type> generate_distrinct_primes(num_type min, num_type max);
+std::pair<num_type,num_type> generate_distinct_primes(num_type min, num_type max);
 
 #endif // FUNZIONI_DI_UTILITA_H_INCLUDED

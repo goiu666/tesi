@@ -1,0 +1,11 @@
+debug/funzioni_di_codifica.o
+debug/funzioni_di_decodifica.o
+debug/funzioni_di_utilita.o
+debug/generazione_chiavi.o
+debug/decryption_form.o
+debug/encryption_form.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_decryption_form.o
+debug/moc_encryption_form.o
+debug/moc_mainwindow.o

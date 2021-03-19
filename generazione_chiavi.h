@@ -2,9 +2,6 @@
 #define GENERAZIONE_CHIAVI_H_INCLUDED
 
 #include "funzioni_di_utilita.h"
-#include <utility>
-
-#include <iostream>
 
 /** CLASSE PER GESTIRE LE CHIAVI
     Alla costruzione di un oggetto key, vengono generati p, q, n, phi(n), a ed x in
@@ -26,18 +23,22 @@ class Key
 {
 public:
     Key();
-    std::pair<num_type, num_type> get_public_key() const;
-    friend num_type decodifica_cp(num_type, Key key);
-    void stampa_chiave()
+    ~Key();
+    std::pair<num_type,num_type> get_public_key() const;
+    friend num_type decodifica_cp(num_type, const Key& key);
+//private:
+    struct
     {
-        std::cout<<"n: "<<n<<'\n';
-        std::cout<<"a: "<<a<<'\n';
-        std::cout<<"x: "<<x<<'\n';
-    }
-private:
-    num_type n;
-    num_type a;
-    num_type x;
+        num_type n{};
+        num_type a{};
+    } public_key;
+
+    struct private_key_t
+    {
+        num_type x{};
+    };
+
+    private_key_t* private_key{};
 
     bool genera_chiave();
 };

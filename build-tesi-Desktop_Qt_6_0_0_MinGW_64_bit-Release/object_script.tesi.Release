@@ -1,0 +1,11 @@
+release/funzioni_di_codifica.o
+release/funzioni_di_decodifica.o
+release/funzioni_di_utilita.o
+release/generazione_chiavi.o
+release/decryption_form.o
+release/encryption_form.o
+release/main.o
+release/mainwindow.o
+release/moc_decryption_form.o
+release/moc_encryption_form.o
+release/moc_mainwindow.o
